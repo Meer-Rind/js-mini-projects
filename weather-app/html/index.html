@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body
+    class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-blue-100 to-blue-300"
+  >
+    <div
+      id="head"
+      class="flex items-center justify-center w-full h-20 max-w-xl bg-blue-500 rounded-md shadow-md"
+    >
+      <h1 class="text-2xl font-bold tracking-wider text-white">
+        Weather Application
+      </h1>
+    </div>
+
+    <div
+      id="card"
+      class="flex flex-col items-center justify-between w-full max-w-md p-6 mt-10 bg-white rounded-lg shadow-lg"
+    >
+      <div id="form" class="w-full space-y-4">
+        <input
+          type="text"
+          id="inputCity"
+          placeholder="Enter Your City..."
+          class="w-full p-3 text-gray-700 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <button
+          id="search"
+          class="w-full py-3 font-semibold text-white transition-all duration-300 bg-blue-600 rounded-md shadow-lg hover:bg-blue-700"
+        >
+          Search
+        </button>
+      </div>
+
+      <div id="result" class="flex flex-col items-center hidden space-y-4">
+        <h1 class="text-xl font-bold text-gray-800" id="cityName"></h1>
+        <p class="text-lg text-gray-700" id="temp"></p>
+        <p class="text-lg text-gray-700" id="condition"></p>
+        <img id="weatherIcon" class="w-24 h-24" alt="Weather Icon" />
+      </div>
+      <p id="errormessage" class="hidden"></p>
+      <h5 id="error1" class="hidden"></h5>
+    </div>
+    <script src="/javascript/script.js">      
+    </script>
+  </body>
+</html>
