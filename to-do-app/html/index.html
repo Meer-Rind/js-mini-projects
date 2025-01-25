@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center p-4">
+  <!-- Header -->
+  <header class="w-full max-w-2xl text-center mt-10 mb-6">
+    <h1 class="text-4xl font-bold text-gray-800">Elegant To-Do List</h1>
+    <p class="text-gray-500 mt-2">Stay productive and organized</p>
+  </header>
+
+  <!-- To-Do List Container -->
+  <main class="w-full max-w-2xl bg-white shadow-md rounded-xl p-6">
+    <!-- Add Task Section -->
+    <div class="flex items-center gap-4 mb-6">
+      <input
+        id="task-input"
+        type="text"
+        placeholder="Add a new task..."
+        class="flex-grow px-4 py-2 border border-gray-300 rounded-lg focus:ring focus:ring-blue-400 focus:outline-none"
+      />
+      <button
+        id="add-task-btn"
+        class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg shadow-md"
+      >
+        Add
+      </button>
+    </div>
+
+    <!-- Task List -->
+    <ul id="task-list" class="space-y-4">
+      <!-- Task items will go here -->
+    </ul>
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-8 flex flex-col items-center">
+    <a
+      href="https://github.com/Meer-Rind"
+      target="_blank"
+      class="flex items-center text-gray-500 hover:text-blue-500"
+    >
+      <img
+        src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+        alt="GitHub Logo"
+        class="w-6 h-6 mr-2"
+      />
+      Shahmeer Abbas Khan
+    </a>
+    <p class="text-gray-400 text-sm mt-2">Made by Shahmeer Abbas Khan</p>
+  </footer>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
