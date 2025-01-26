@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="grid h-screen bg-blue-300 place-content-center">
+    <div id="container" class="flex flex-col items-center bg-white shadow-lg h-128 w-70 shadow-black">
+      <div
+        class="flex items-center justify-center w-full align-middle bg-black"
+        id="heading"
+      >
+        <h2 class="p-2 m-2 text-xl font-bold text-white" id="head">
+          Qr Code Generator
+        </h2>
+      </div>
+
+      <div
+        id="main"
+        class="flex flex-wrap items-center m-5 justify-items-center-between"
+      >
+        <input
+          type="text"
+          name=""
+          id="input"
+          placeholder="Input Url"
+          class="justify-center block w-full h-12 m-3 text-black border-2 border-black placeholder:text-center placeholder:text-xl placeholder:font-normal placeholder:text-black"
+        />
+
+        <button
+          id="button"
+          class="block p-5 m-5 mt-6 ml-56 text-white bg-black rounded-md shadow-md hover:bg-slate-800 shadow-black"
+        >
+          Click here to Generate Qr
+        </button>
+      </div>
+      <div id="disp" class="flex items-center justify-center w-40 h-40">
+        <img src="" alt="" id="img" />
+      </div>
+    </div>
+
+    <footer class="py-3 mt-5 text-center text-white bg-black">
+      <p>Developed by Shahmeer Abbas Khan</p>
+      <a
+        href="https://github.com/Meer-Rind"
+        target="_blank"
+        class="flex items-center justify-center gap-2"
+      >
+        <img
+          src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+          alt="GitHub Logo"
+          class="w-6 h-6"
+        />
+        <span>Meer-Rind</span>
+      </a>
+    </footer>
+
+    <script src="/qr-code-generator/js/app.js"></script>
+  </body>
+</html>
